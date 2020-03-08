@@ -8,8 +8,8 @@
     </head>
     <body>
         <div class='centered-container'>
-            <form>
-                <label>
+            <form id="joke-form" name="jokeForm" onsubmit="handleSubmit(event)">
+                <label for="joke">
                     Gimme a
                     <select id="type" name="type" class='joke-select'>
                         <option value='undefined'>Select</option>
@@ -19,8 +19,9 @@
                     </select>
                     Joke,
                 </label>
-                <button type="submit">NOW!!</button>
+                <button type="submit" >NOW!!</button>
             </form>
+            <div id='theJoke'></div>
         </div>
         <script src="scripts.js"></script>
     </body>

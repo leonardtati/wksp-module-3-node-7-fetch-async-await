@@ -27,6 +27,17 @@ newPauseFunction(1)
 
 _let's convert it to async/await_
 
+async lets its an async function it expects an await inside
+
+const doIt = async () =>{
+    await newPauseFunction (1);
+    await newPauseFunction (2);
+    await newPauseFunction (3);
+    await newPauseFunction (3);
+    console.log('no more "awaits"');
+}
+doIt();
+
 ---
 
 ### Exercise
@@ -44,6 +55,18 @@ transformText(string)
         return str;
     })
     .catch((err) => console.log(err));
+
+    const transformText = async(string) =>{
+        const str =  await allCaps(string);
+        const nextStr =  await trimFirst(str)
+        const nextNext = await trimLast(nexStr)
+        ....await newPauseFunction (str)
+        await function{
+            console.log(str);
+            return str;
+        }
+    })
+     .catch((err) => console.log(err));
 ```
 
 ---

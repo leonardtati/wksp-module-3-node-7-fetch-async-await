@@ -8,6 +8,6 @@ const getGeekJoke = async () => {
     } catch (err) { console.log(err) }
 }
 
-// getGeekJoke().then(data => console.log(data));
+getGeekJoke().then(data => console.log(data));
 
 module.exports = { getGeekJoke };
